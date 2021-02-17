@@ -18,7 +18,7 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    box-shadow: 0 0 0 2px rgb(29, 27, 27);
+    box-shadow: 0 0 0 2px rgb(73, 69, 69);
     border: 1px solid;
     cursor: pointer;
     line-height: 100px;
@@ -26,4 +26,13 @@ h1 {
 }
 h2 {
     font-size: 30px;
+    color: white;
+}
+button {
+    background-color: rgb(221, 88, 64);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
 }

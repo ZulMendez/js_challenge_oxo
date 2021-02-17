@@ -3,7 +3,7 @@ const statut = document.querySelector('h2')
 let jeuActif = true
 let joueurActif = "X"
 
-let etatJeu = ["","","","","","","","",""]
+let etatJeu = ["","","","","","","","",""];
 
 const conditionsVictoire = [
     [0,1,2],
@@ -74,5 +74,21 @@ function verifgagne () {
         return
     }
     // Si mnt on a ni gagné ni d'égalité, on doit changer de joueur
-    
+    if (joueurActif === "X") {
+        joueurActif = "O"
+    } else if (joueurActif === "O") {
+        joueurActif = "X"
+    }
+    statut.innerHTML = tourJoueur()
+    // joueurActif = joueurActif === "X" ? "O" : "X"
+    // statut.innerHTML = tourJoueur()
+};
+
+function recommencer() {
+    joueurActif = "X"
+    jeuActif = true
+    etatJeu = ["","","","","","","","",""]
+    statut.innerHTML = tourJoueur()
+    document.querySelectorAll('.cell').forEach(el => el.innerHTML = "")
 }
+
