@@ -18,7 +18,7 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    box-shadow: 0 0 0 1px ;
+    box-shadow: 0 0 0 2px rgb(29, 27, 27);
     border: 1px solid;
     cursor: pointer;
     line-height: 100px;
